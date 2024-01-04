@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.farmatia.model.Categoria;
-import com.farmatia.repository.CategoriaRespository;
+import com.farmatia.repository.CategoriaRepository;
 
 import jakarta.validation.Valid;
 
@@ -29,7 +29,7 @@ import jakarta.validation.Valid;
 public class CategoriaController {
 
     @Autowired
-    private CategoriaRespository categoriaRepository;
+    private CategoriaRepository categoriaRepository;
     
     @GetMapping
 	public ResponseEntity<List<Categoria>> getAll() {
